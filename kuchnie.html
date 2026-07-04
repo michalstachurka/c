@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Kuchnie na wymiar Kraków — projekt i montaż | KuchnieNaWymiar.eu — demo</title>
+  <meta name="description" content="Kuchnia na wymiar dopasowana do układu pomieszczenia i codziennych potrzeb. Poznaj sposób planowania stref, materiałów i zabudowy. Nieoficjalna koncepcja demonstracyjna.">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <p class="demo-note">Nieoficjalna koncepcja demonstracyjna — projekt <strong>nie jest</strong> oficjalną stroną firmy.</p>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="KuchnieNaWymiar.eu — strona główna (demo)">
+        <svg class="brand__mark" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#241A26"/><rect x="6" y="7" width="4" height="18" fill="#F2F0EA"/><rect x="12" y="7" width="8" height="18" fill="#F2F0EA" opacity=".55"/><rect x="22" y="7" width="4" height="18" fill="#C7DB58"/></svg>
+        <span>KuchnieNaWymiar<span class="brand__tld">.eu</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Nawigacja główna">
+        <a class="site-nav__link" href="index.html">Start</a>
+        <a class="site-nav__link" href="kuchnie.html" aria-current="page">Kuchnie</a>
+        <a class="site-nav__link" href="inne-meble.html">Inne meble</a>
+        <a class="site-nav__link" href="realizacje.html">Realizacje</a>
+        <a class="site-nav__link" href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <a class="btn btn--primary btn--small site-header__cta" href="kontakt.html#formularz">
+        Wyślij projekt
+        <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Start</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kuchnie.html" aria-current="page">Kuchnie</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="inne-meble.html">Inne meble</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="realizacje.html">Realizacje</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span class="t-label" style="color: var(--chalk-45)">Kraków · pomiar · projekt · montaż</span>
+      <div class="mobile-menu__contact">
+        <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń: 732 588 726</a>
+        <a class="btn btn--outline-light" href="mailto:kontakt@kuchnienawymiar.eu">Napisz e-mail</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="tresc">
+
+    <!-- HERO typograficzne -->
+    <section class="section section--flush-bottom k-hero" aria-labelledby="k-hero-title">
+      <div class="container">
+        <p class="hero__kicker t-label">Kuchnie na wymiar · Kraków</p>
+        <h1 class="t-h1 k-hero__title" id="k-hero-title">
+          <span class="line-1">Najpierw <span class="t-accent">ruch</span>.</span>
+          <span class="line-2">Potem forma.</span>
+        </h1>
+
+        <div class="k-hero__grid">
+          <div class="k-hero__copy">
+            <p class="t-lead reveal">
+              Dobra kuchnia nie wymaga zastanawiania się, gdzie coś odłożyć albo
+              jak dostać się do najczęściej używanych rzeczy. Układ powinien wspierać
+              codzienne czynności, zanim zaczniemy wybierać kolor frontów.
+            </p>
+            <div class="reveal" data-delay="1">
+              <a class="btn btn--primary" href="kontakt.html#formularz">
+                Umów rozmowę o kuchni
+                <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+            </div>
+
+            <div class="flow-chain" data-flow-chain aria-label="Sekwencja codziennych ruchów w kuchni">
+              <span class="flow-chain__step flow-chain__step--hot">Sięgnij</span>
+              <svg class="flow-chain__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span class="flow-chain__step">Odłóż</span>
+              <svg class="flow-chain__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span class="flow-chain__step">Przygotuj</span>
+              <svg class="flow-chain__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span class="flow-chain__step">Ugotuj</span>
+              <svg class="flow-chain__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span class="flow-chain__step">Podaj</span>
+              <svg class="flow-chain__arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span class="flow-chain__step">Posprzątaj</span>
+            </div>
+          </div>
+
+          <figure class="k-hero__media reveal-front reveal-front--chalk">
+            <div class="media-frame">
+              <img src="assets/images/kitchen-zones-top-view-4x3.svg"
+                alt="Widok kuchni z góry pokazujący relacje między głównymi strefami pracy — rysunek poglądowy"
+                width="1600" height="1200">
+              <span class="demo-tag">Materiał demonstracyjny</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIORYTETY -->
+    <section class="section k-priorities" aria-labelledby="k-priorities-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__meta">
+            <span class="section-head__index">01 — Priorytety</span>
+            <span class="zone-chip">Demo interakcji, nie kalkulator</span>
+          </div>
+          <h2 class="t-h2 section-head__title reveal" id="k-priorities-title">Co ma zmienić nowa kuchnia?</h2>
+        </div>
+
+        <div data-tabs>
+          <div class="k-priorities__tabs" role="tablist" aria-label="Priorytety nowej kuchni">
+            <button class="k-priorities__tab" role="tab" id="ptab-blat" aria-controls="ppanel-blat" aria-selected="true">Więcej blatu</button>
+            <button class="k-priorities__tab" role="tab" id="ptab-przech" aria-controls="ppanel-przech" aria-selected="false" tabindex="-1">Więcej przechowywania</button>
+            <button class="k-priorities__tab" role="tab" id="ptab-lekko" aria-controls="ppanel-lekko" aria-selected="false" tabindex="-1">Lżejsza przestrzeń</button>
+            <button class="k-priorities__tab" role="tab" id="ptab-porzadek" aria-controls="ppanel-porzadek" aria-selected="false" tabindex="-1">Łatwiejszy porządek</button>
+          </div>
+
+          <div class="k-priorities__panel" role="tabpanel" id="ppanel-blat" aria-labelledby="ptab-blat">
+            <div class="k-priorities__answer">
+              <span class="t-label" style="color: var(--ink-62)">Priorytet 01</span>
+              <h3>Blat tam, gdzie naprawdę pracujesz.</h3>
+              <p>Sprawdzamy, gdzie przestrzeń robocza jest najbardziej potrzebna i co nie powinno jej zajmować.</p>
+            </div>
+            <ul class="k-priorities__checks">
+              <li>sprzęty przesunięte poza główny odcinek pracy</li>
+              <li>nisza i reling zamiast rzeczy stojących na blacie</li>
+              <li>ciągły blat między zlewem a płytą</li>
+            </ul>
+          </div>
+
+          <div class="k-priorities__panel" role="tabpanel" id="ppanel-przech" aria-labelledby="ptab-przech" hidden>
+            <div class="k-priorities__answer">
+              <span class="t-label" style="color: var(--ink-62)">Priorytet 02</span>
+              <h3>Przechowywanie planowane od środka.</h3>
+              <p>Planujemy wnętrza szafek, szuflad i wysokiej zabudowy — nie tylko ich zewnętrzny podział.</p>
+            </div>
+            <ul class="k-priorities__checks">
+              <li>lista tego, co naprawdę ma się zmieścić</li>
+              <li>szuflady z pełnym wysuwem zamiast głębokich półek</li>
+              <li>zabudowa do sufitu na rzeczy sezonowe</li>
+            </ul>
+          </div>
+
+          <div class="k-priorities__panel" role="tabpanel" id="ppanel-lekko" aria-labelledby="ptab-lekko" hidden>
+            <div class="k-priorities__answer">
+              <span class="t-label" style="color: var(--ink-62)">Priorytet 03</span>
+              <h3>Dużo miejsca, mało ciężaru.</h3>
+              <p>Zabudowa może pomieścić dużo, a jednocześnie nie dominować całego wnętrza.</p>
+            </div>
+            <ul class="k-priorities__checks">
+              <li>spokojne fronty i dyskretne uchwyty</li>
+              <li>płytsze moduły tam, gdzie liczy się przejście</li>
+              <li>otwarte nisze tylko tam, gdzie mają zadanie</li>
+            </ul>
+          </div>
+
+          <div class="k-priorities__panel" role="tabpanel" id="ppanel-porzadek" aria-labelledby="ptab-porzadek" hidden>
+            <div class="k-priorities__answer">
+              <span class="t-label" style="color: var(--ink-62)">Priorytet 04</span>
+              <h3>Porządek wynika z układu.</h3>
+              <p>Miejsce na odpady, detergenty, drobne sprzęty i rzeczy używane codziennie powinno wynikać z naturalnej kolejności czynności.</p>
+            </div>
+            <ul class="k-priorities__checks">
+              <li>segregacja odpadów przy zlewie</li>
+              <li>strefa detergentów w jednym miejscu</li>
+              <li>drobny sprzęt w zasięgu blatu, nie na blacie</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAŁY -->
+    <section class="section k-materials surface-dark plan-lines" aria-labelledby="k-materials-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__meta">
+            <span class="section-head__index" style="color: var(--chalk-72)">02 — Materiały</span>
+            <span class="zone-chip zone-chip--walnut" style="color: var(--chalk-72)">Detal, nie dekoracja</span>
+          </div>
+          <h2 class="t-h2 section-head__title reveal" id="k-materials-title">
+            To, czego <span class="t-accent">dotykasz</span> codziennie.
+          </h2>
+        </div>
+
+        <div class="k-materials__grid">
+          <figure class="k-materials__media reveal-front">
+            <div class="media-frame">
+              <img src="assets/images/materials-touch-detail-16x9.svg"
+                alt="Detal połączenia frontu, blatu, uchwytu frezowanego i wnętrza szuflady — rysunek poglądowy"
+                loading="lazy" width="1600" height="900">
+              <span class="demo-tag">Materiał demonstracyjny</span>
+            </div>
+            <figcaption style="color: var(--chalk-45)">Styk frontu, blatu, uchwytu i wnętrza szuflady — przekrój poglądowy</figcaption>
+          </figure>
+
+          <div>
+            <p class="t-lead reveal" style="color: var(--chalk-72); margin-bottom: var(--space-4)">
+              Front, blat, uchwyt, prowadnica i światło wpływają na wygodę równie mocno
+              jak kolor. Materiały dobieramy nie tylko do wizji wnętrza, lecz także
+              do sposobu użytkowania.
+            </p>
+
+            <div class="k-materials__list">
+              <article class="k-material reveal">
+                <span class="k-material__no">MAT–01</span>
+                <div>
+                  <h3>Front</h3>
+                  <p style="color: var(--chalk-72)">Decyduje o charakterze wnętrza, ale musi współgrać z podziałem zabudowy i światłem.</p>
+                </div>
+              </article>
+              <article class="k-material reveal" data-delay="1">
+                <span class="k-material__no">MAT–02</span>
+                <div>
+                  <h3>Blat</h3>
+                  <p style="color: var(--chalk-72)">Najbardziej intensywnie używana powierzchnia wymaga świadomego wyboru materiału i układu.</p>
+                </div>
+              </article>
+              <article class="k-material reveal" data-delay="2">
+                <span class="k-material__no">MAT–03</span>
+                <div>
+                  <h3>Wnętrze</h3>
+                  <p style="color: var(--chalk-72)">Szuflada jest wartościowa dopiero wtedy, gdy jej zawartość ma logiczne miejsce.</p>
+                </div>
+              </article>
+              <article class="k-material reveal" data-delay="3">
+                <span class="k-material__no">MAT–04</span>
+                <div>
+                  <h3>Światło</h3>
+                  <p style="color: var(--chalk-72)">Oświetlenie robocze powinno pomagać w codziennych czynnościach, a nie tylko budować wieczorny nastrój.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UKŁADY -->
+    <section class="section k-layouts" aria-labelledby="k-layouts-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__meta">
+            <span class="section-head__index">03 — Układy</span>
+            <span class="zone-chip">Diagramy edukacyjne</span>
+          </div>
+          <h2 class="t-h2 section-head__title reveal" id="k-layouts-title">Układ wynika z pomieszczenia — nie z mody.</h2>
+        </div>
+
+        <div class="k-layouts__grid">
+          <article class="layout-card reveal">
+            <span class="t-label">U–01</span>
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="8" y="8" width="184" height="134" fill="none" stroke="#241A26" stroke-width="2" opacity="0.85"/>
+              <rect x="12" y="12" width="176" height="30" fill="#241A26" opacity="0.12"/>
+              <line x1="12" y1="42" x2="188" y2="42" stroke="#241A26" opacity="0.5"/>
+              <rect x="150" y="16" width="30" height="22" fill="#241A26" opacity="0.75"/>
+              <rect x="60" y="18" width="30" height="18" rx="4" fill="none" stroke="#241A26" opacity="0.7"/>
+              <circle cx="112" cy="27" r="7" fill="none" stroke="#241A26" opacity="0.7"/>
+              <circle cx="126" cy="27" r="5" fill="none" stroke="#241A26" opacity="0.7"/>
+              <rect x="12" y="12" width="176" height="30" fill="none" stroke="#C7DB58" stroke-width="1.6" stroke-dasharray="5 4"/>
+            </svg>
+            <h3>Kuchnia liniowa</h3>
+            <p>Wszystkie strefy w jednym ciągu — dobra przy wąskich pomieszczeniach, wymaga pilnowania kolejności stref.</p>
+          </article>
+
+          <article class="layout-card reveal" data-delay="1">
+            <span class="t-label">U–02</span>
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="8" y="8" width="184" height="134" fill="none" stroke="#241A26" stroke-width="2" opacity="0.85"/>
+              <path d="M12 12h176v30H42v96H12z" fill="#241A26" opacity="0.12"/>
+              <path d="M12 42h30v96M42 42h146" fill="none" stroke="#241A26" opacity="0.5"/>
+              <rect x="150" y="16" width="30" height="22" fill="#241A26" opacity="0.75"/>
+              <rect x="70" y="18" width="30" height="18" rx="4" fill="none" stroke="#241A26" opacity="0.7"/>
+              <circle cx="26" cy="80" r="7" fill="none" stroke="#241A26" opacity="0.7"/>
+              <circle cx="26" cy="102" r="5" fill="none" stroke="#241A26" opacity="0.7"/>
+              <path d="M12 12h176v30H42v96H12z" fill="none" stroke="#C7DB58" stroke-width="1.6" stroke-dasharray="5 4"/>
+            </svg>
+            <h3>Kuchnia w kształcie L</h3>
+            <p>Naturalny trójkąt pracy i miejsce na stół — narożnik wymaga przemyślanego mechanizmu.</p>
+          </article>
+
+          <article class="layout-card reveal" data-delay="2">
+            <span class="t-label">U–03</span>
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="8" y="8" width="184" height="134" fill="none" stroke="#241A26" stroke-width="2" opacity="0.85"/>
+              <path d="M12 12h176v30h-30v96h-116V42H12z" fill="#241A26" opacity="0.12"/>
+              <path d="M12 42h30M42 42v96M158 42v96M158 42h30" fill="none" stroke="#241A26" opacity="0.5"/>
+              <rect x="90" y="16" width="30" height="18" rx="4" fill="none" stroke="#241A26" opacity="0.7"/>
+              <circle cx="172" cy="80" r="7" fill="none" stroke="#241A26" opacity="0.7"/>
+              <rect x="16" y="60" width="22" height="30" fill="#241A26" opacity="0.75"/>
+              <path d="M12 12h176v30h-30v96h-116V42H12z" fill="none" stroke="#C7DB58" stroke-width="1.6" stroke-dasharray="5 4"/>
+            </svg>
+            <h3>Kuchnia w kształcie U</h3>
+            <p>Najwięcej blatu i przechowywania — potrzebuje odpowiedniej szerokości pomieszczenia.</p>
+          </article>
+
+          <article class="layout-card reveal" data-delay="3">
+            <span class="t-label">U–04</span>
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="8" y="8" width="184" height="134" fill="none" stroke="#241A26" stroke-width="2" opacity="0.85"/>
+              <rect x="12" y="12" width="176" height="30" fill="#241A26" opacity="0.12"/>
+              <line x1="12" y1="42" x2="188" y2="42" stroke="#241A26" opacity="0.5"/>
+              <rect x="58" y="82" width="84" height="34" fill="#241A26" opacity="0.12" stroke="#241A26" stroke-opacity="0.6"/>
+              <rect x="150" y="16" width="30" height="22" fill="#241A26" opacity="0.75"/>
+              <circle cx="80" cy="27" r="7" fill="none" stroke="#241A26" opacity="0.7"/>
+              <rect x="58" y="82" width="84" height="34" fill="none" stroke="#C7DB58" stroke-width="1.6" stroke-dasharray="5 4"/>
+            </svg>
+            <h3>Kuchnia z wyspą</h3>
+            <p>Dodatkowa strefa pracy i spotkań — wymaga zachowania wygodnych przejść wokół wyspy.</p>
+          </article>
+        </div>
+
+        <p class="process__footnote" style="margin-top: var(--space-4)">
+          Każdy układ ma inne zalety i ograniczenia. Diagramy pełnią funkcję edukacyjną — nie są automatyczną rekomendacją.
+        </p>
+      </div>
+    </section>
+
+    <!-- CO PRZYGOTOWAĆ -->
+    <section class="section k-prepare" aria-labelledby="k-prepare-title">
+      <div class="container">
+        <div class="k-prepare__grid">
+          <div>
+            <div class="section-head__meta" style="margin-bottom: var(--space-3)">
+              <span class="section-head__index">04 — Przygotowanie</span>
+            </div>
+            <h2 class="t-h2 reveal" id="k-prepare-title">Co przygotować do wyceny?</h2>
+            <p class="t-lead reveal" data-delay="1" style="color: var(--ink-62); margin-top: var(--space-3)">
+              Nie potrzebujesz kompletu — im więcej z tej listy uda się zebrać,
+              tym konkretniej można rozmawiać o układzie i kosztach.
+            </p>
+          </div>
+
+          <ol class="c-prepare" style="border: 1px solid var(--ink-14)">
+            <li>zdjęcia pomieszczenia</li>
+            <li>podstawowe wymiary lub rzut</li>
+            <li>lista planowanych sprzętów</li>
+            <li>inspiracje</li>
+            <li>informacja, co nie działa w obecnym układzie</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="band-cta" aria-labelledby="k-cta-title">
+      <div class="container band-cta__inner">
+        <div>
+          <h2 class="t-h2 band-cta__title" id="k-cta-title">Masz rzut albo zdjęcia pomieszczenia?</h2>
+          <p class="t-lead" style="color: var(--ink-62); margin-top: var(--space-2)">
+            Prześlij materiały i napisz, czego najbardziej brakuje Ci w obecnej przestrzeni.
+          </p>
+        </div>
+        <div class="band-cta__actions">
+          <a class="btn btn--primary" href="kontakt.html#formularz">
+            Wyślij zapytanie
+            <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a class="btn btn--outline" href="realizacje.html">Zobacz inspiracje</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <p class="site-footer__claim">
+          Dobra kuchnia nie zaczyna się od frontów. Zaczyna się od <span class="t-accent">rytmu dnia</span>.
+        </p>
+        <nav aria-label="Stopka">
+          <h2 class="t-label">Nawigacja</h2>
+          <div class="site-footer__links">
+            <a href="index.html">Start</a>
+            <a href="kuchnie.html">Kuchnie na wymiar</a>
+            <a href="inne-meble.html">Inne meble</a>
+            <a href="realizacje.html">Realizacje</a>
+            <a href="kontakt.html">Kontakt i wycena</a>
+          </div>
+        </nav>
+        <div>
+          <h2 class="t-label">Kontakt</h2>
+          <address>
+            <a href="tel:+48732588726">+48 732 588 726</a>
+            <a href="mailto:kontakt@kuchnienawymiar.eu">kontakt@kuchnienawymiar.eu</a>
+            <p>ul. Rondo Mogilskie 1/542<br>31-516 Kraków</p>
+            <p class="site-footer__note">Spotkanie pod wskazanym adresem wymaga wcześniejszego umówienia.</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="rhythm-strip" aria-hidden="true"></div>
+
+      <div class="site-footer__bottom">
+        <p class="disclaimer">Nieoficjalna koncepcja demonstracyjna — projekt nie jest oficjalną stroną firmy.</p>
+        <p>Materiały wizualne: rysunki poglądowe / inspiracje demonstracyjne</p>
+        <p>Demo © <span data-year>2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Szybki kontakt">
+    <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń</a>
+    <a class="btn btn--ghost" href="kontakt.html#formularz">Napisz</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/navigation.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+  <script src="assets/js/zones.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/form-demo.js" defer></script>
+</body>
+</html>

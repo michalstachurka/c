@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Szafy i meble na wymiar Kraków | KuchnieNaWymiar.eu — demo</title>
+  <meta name="description" content="Szafy, garderoby, meble łazienkowe i biurowe wykonywane na wymiar w Krakowie. Zabudowa dopasowana do przestrzeni i sposobu przechowywania. Nieoficjalna koncepcja demonstracyjna.">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <p class="demo-note">Nieoficjalna koncepcja demonstracyjna — projekt <strong>nie jest</strong> oficjalną stroną firmy.</p>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="KuchnieNaWymiar.eu — strona główna (demo)">
+        <svg class="brand__mark" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#241A26"/><rect x="6" y="7" width="4" height="18" fill="#F2F0EA"/><rect x="12" y="7" width="8" height="18" fill="#F2F0EA" opacity=".55"/><rect x="22" y="7" width="4" height="18" fill="#C7DB58"/></svg>
+        <span>KuchnieNaWymiar<span class="brand__tld">.eu</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Nawigacja główna">
+        <a class="site-nav__link" href="index.html">Start</a>
+        <a class="site-nav__link" href="kuchnie.html">Kuchnie</a>
+        <a class="site-nav__link" href="inne-meble.html" aria-current="page">Inne meble</a>
+        <a class="site-nav__link" href="realizacje.html">Realizacje</a>
+        <a class="site-nav__link" href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <a class="btn btn--primary btn--small site-header__cta" href="kontakt.html#formularz">
+        Wyślij projekt
+        <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Start</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kuchnie.html">Kuchnie</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="inne-meble.html" aria-current="page">Inne meble</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="realizacje.html">Realizacje</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span class="t-label" style="color: var(--chalk-45)">Kraków · pomiar · projekt · montaż</span>
+      <div class="mobile-menu__contact">
+        <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń: 732 588 726</a>
+        <a class="btn btn--outline-light" href="mailto:kontakt@kuchnienawymiar.eu">Napisz e-mail</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="tresc">
+
+    <!-- HERO kolażowe -->
+    <section class="section m-hero" aria-labelledby="m-hero-title">
+      <div class="container">
+        <div class="m-hero__grid">
+          <div>
+            <p class="hero__kicker t-label">Szafy · łazienki · biura</p>
+            <h1 class="t-h1 reveal" id="m-hero-title">
+              Ta sama <span class="t-accent">precyzja</span> poza kuchnią.
+            </h1>
+            <p class="t-lead reveal" data-delay="1" style="color: var(--ink-62); margin-top: var(--space-3)">
+              Meble na wymiar mogą porządkować przedpokój, garderobę, łazienkę
+              i miejsce pracy. Najważniejsze jest to, co ma znaleźć się w środku
+              i jak często będzie używane.
+            </p>
+            <div class="reveal" data-delay="2" style="margin-top: var(--space-4)">
+              <a class="btn btn--primary" href="kontakt.html#formularz">
+                Porozmawiaj o zabudowie
+                <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="m-hero__collage">
+            <figure class="media-frame reveal-front">
+              <img src="assets/images/wardrobe-inside-out-4x5.svg"
+                alt="Szafa na wymiar z funkcjonalnie podzielonym wnętrzem — rysunek poglądowy"
+                width="1280" height="1600">
+              <span class="demo-tag">Materiał demonstracyjny</span>
+            </figure>
+            <figure class="media-frame reveal-front" data-delay="1">
+              <img src="assets/images/bathroom-furniture-compact-4x5.svg"
+                alt="Meble łazienkowe na wymiar w kompaktowym wnętrzu — rysunek poglądowy"
+                width="1280" height="1600" loading="lazy">
+            </figure>
+            <span class="m-hero__dim" aria-hidden="true">wymiar rzeczywisty</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SZAFY — projekt zaczyna się za frontem -->
+    <section class="section m-wardrobe" aria-labelledby="m-wardrobe-title">
+      <div class="container">
+        <div class="m-wardrobe__grid">
+          <div class="m-wardrobe__copy">
+            <div class="section-head__meta">
+              <span class="section-head__index">01 — Szafy i garderoby</span>
+              <span class="zone-chip">Przechowywanie od środka</span>
+            </div>
+            <h2 class="t-h2 reveal" id="m-wardrobe-title">
+              Front zamyka przestrzeń. Projekt zaczyna się <span class="t-accent">za nim</span>.
+            </h2>
+            <p class="t-lead reveal" data-delay="1" style="color: var(--ink-62)">
+              Drążki, półki, szuflady i miejsca na większe przedmioty powinny
+              odpowiadać rzeczywistej zawartości szafy, a nie przypadkowemu
+              podziałowi katalogowemu.
+            </p>
+            <button class="btn btn--outline reveal" data-delay="2" type="button"
+              data-wardrobe-toggle aria-pressed="false" aria-controls="wardrobe-stage">
+              <span data-wardrobe-label>Odsuń fronty</span>
+              <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+          </div>
+
+          <div class="wardrobe-stage" id="wardrobe-stage">
+            <span class="wardrobe-stage__hint">Elewacja 1:20 — demo</span>
+            <svg viewBox="0 0 640 480" aria-hidden="true">
+              <defs>
+                <clipPath id="wr-clip"><rect x="60" y="40" width="520" height="412"/></clipPath>
+              </defs>
+              <!-- podłoga -->
+              <line x1="0" y1="452" x2="640" y2="452" stroke="#241A26" stroke-width="2" opacity="0.8"/>
+              <!-- korpus -->
+              <rect x="60" y="40" width="520" height="412" fill="#EBE8DF" stroke="#241A26" stroke-width="2" stroke-opacity="0.85"/>
+
+              <!-- wnętrze -->
+              <g class="wr-inside">
+                <!-- pion podziału -->
+                <line x1="392" y1="44" x2="392" y2="448" stroke="#241A26" stroke-opacity="0.55" stroke-width="1.5"/>
+                <!-- drążek + wieszaki -->
+                <line x1="72" y1="120" x2="384" y2="120" stroke="#6A4936" stroke-width="5" opacity="0.95"/>
+                <g stroke="#241A26" stroke-opacity="0.7" stroke-width="1.6" fill="none">
+                  <path d="M110 120q3-12 13-9"/><path d="M164 120q3-12 13-9"/><path d="M218 120q3-12 13-9"/><path d="M272 120q3-12 13-9"/><path d="M326 120q3-12 13-9"/>
+                </g>
+                <g fill="#F2F0EA" stroke="#241A26" stroke-opacity="0.4" stroke-width="1.2">
+                  <path d="M96 131h44l8 130h-58z"/>
+                  <path d="M150 131h44l8 168h-58z"/>
+                  <path d="M204 131h44l8 130h-58z"/>
+                  <path d="M258 131h44l8 150h-58z"/>
+                  <path d="M312 131h44l8 116h-58z"/>
+                </g>
+                <!-- półki prawej kolumny -->
+                <g stroke="#6A4936" stroke-width="5" opacity="0.9">
+                  <line x1="396" y1="150" x2="576" y2="150"/>
+                  <line x1="396" y1="230" x2="576" y2="230"/>
+                  <line x1="396" y1="310" x2="576" y2="310"/>
+                </g>
+                <rect x="410" y="96" width="60" height="50" fill="#F2F0EA" stroke="#241A26" stroke-opacity="0.4"/>
+                <rect x="486" y="108" width="52" height="38" fill="#C7DB58" opacity="0.8" stroke="#241A26" stroke-opacity="0.4"/>
+                <rect x="410" y="182" width="70" height="44" fill="#E3DFD3" stroke="#241A26" stroke-opacity="0.4"/>
+                <rect x="496" y="190" width="52" height="36" fill="#F2F0EA" stroke="#241A26" stroke-opacity="0.4"/>
+                <!-- szuflady dolne -->
+                <g fill="#F2F0EA" stroke="#241A26" stroke-opacity="0.6" stroke-width="1.4">
+                  <rect x="398" y="330" width="176" height="36"/>
+                  <rect x="398" y="372" width="176" height="36"/>
+                  <rect x="398" y="414" width="176" height="32"/>
+                </g>
+                <g stroke="#241A26" stroke-opacity="0.85" stroke-width="3">
+                  <line x1="466" y1="348" x2="506" y2="348"/>
+                  <line x1="466" y1="390" x2="506" y2="390"/>
+                  <line x1="466" y1="428" x2="506" y2="428"/>
+                </g>
+                <!-- kosze / strefa niska lewa -->
+                <rect x="80" y="330" width="140" height="116" fill="none" stroke="#241A26" stroke-opacity="0.5" stroke-dasharray="5 5"/>
+                <rect x="236" y="330" width="140" height="116" fill="none" stroke="#241A26" stroke-opacity="0.5" stroke-dasharray="5 5"/>
+              </g>
+
+              <!-- fronty przesuwne (chowają się za krawędzią korpusu) -->
+              <g clip-path="url(#wr-clip)">
+                <g class="wr-front wr-front--left">
+                  <rect x="62" y="42" width="258" height="408" fill="#241A26" opacity="0.96"/>
+                  <line x1="288" y1="210" x2="288" y2="280" stroke="#F2F0EA" stroke-width="3" opacity="0.85"/>
+                  <line x1="100" y1="42" x2="100" y2="450" stroke="#F2F0EA" opacity="0.12"/>
+                </g>
+                <g class="wr-front wr-front--right">
+                  <rect x="320" y="42" width="258" height="408" fill="#EFECE4" stroke="#241A26" stroke-opacity="0.5"/>
+                  <line x1="352" y1="210" x2="352" y2="280" stroke="#241A26" stroke-width="3" opacity="0.85"/>
+                  <line x1="540" y1="42" x2="540" y2="450" stroke="#241A26" opacity="0.12"/>
+                </g>
+              </g>
+
+              <!-- wymiar -->
+              <g stroke="#241A26" opacity="0.4" stroke-width="1">
+                <line x1="60" y1="468" x2="580" y2="468"/>
+                <line x1="60" y1="461" x2="60" y2="475"/>
+                <line x1="580" y1="461" x2="580" y2="475"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ŁAZIENKI -->
+    <section class="section m-block" id="lazienki" aria-labelledby="m-bath-title">
+      <div class="container">
+        <div class="m-block__grid">
+          <figure class="m-block__media reveal-front reveal-front--chalk">
+            <div class="media-frame">
+              <img src="assets/images/bathroom-furniture-compact-4x5.svg"
+                alt="Zabudowa łazienki: szafka umywalkowa, wysoki słupek i lustro — rysunek poglądowy"
+                loading="lazy" width="1280" height="1600">
+              <span class="demo-tag">Materiał demonstracyjny</span>
+            </div>
+          </figure>
+          <div class="m-block__copy">
+            <div class="section-head__meta">
+              <span class="section-head__index">02 — Meble łazienkowe</span>
+              <span class="zone-chip zone-chip--clay">Kompaktowe decyzje</span>
+            </div>
+            <h2 class="t-h2 reveal" id="m-bath-title">Mała przestrzeń wymaga <span class="t-accent">dokładnych</span> decyzji.</h2>
+            <p class="t-lead reveal" data-delay="1" style="color: var(--ink-62)">
+              Zabudowa może wykorzystać miejsce wokół umywalki, instalacji i wnęk,
+              jednocześnie utrzymując spokojny wygląd pomieszczenia.
+            </p>
+            <ul class="k-priorities__checks reveal" data-delay="2" style="border: 0; padding: 0">
+              <li>zabudowa projektowana wokół przyłączy, nie obok nich</li>
+              <li>pełne wykorzystanie wysokości przy małym metrażu</li>
+              <li>zamknięte fronty tam, gdzie liczy się porządek</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIURA -->
+    <section class="section m-block m-block--office" id="biura" aria-labelledby="m-office-title" style="padding-top: 0">
+      <div class="container">
+        <div class="m-block__grid m-block__grid--flip">
+          <figure class="m-block__media reveal-front reveal-front--chalk">
+            <div class="media-frame" style="aspect-ratio: 4 / 3">
+              <img src="assets/images/inspiration-hidden-storage-4x3.svg"
+                alt="Ściana zabudowy z chowanym miejscem pracy — rysunek poglądowy"
+                loading="lazy" width="1600" height="1200">
+              <span class="demo-tag">Materiał demonstracyjny</span>
+            </div>
+          </figure>
+          <div class="m-block__copy">
+            <div class="section-head__meta">
+              <span class="section-head__index">03 — Meble biurowe</span>
+              <span class="zone-chip zone-chip--steel">Funkcjonalna zabudowa</span>
+            </div>
+            <h2 class="t-h2 reveal" id="m-office-title">Praca potrzebuje porządku, który <span class="t-accent">nie przeszkadza</span>.</h2>
+            <p class="t-lead reveal" data-delay="1" style="color: var(--ink-62)">
+              Biurko, przechowywanie dokumentów i miejsce na sprzęt warto zaplanować
+              jako jeden układ — także wtedy, gdy praca dzieje się w salonie
+              albo sypialni.
+            </p>
+            <p class="m-note reveal" data-delay="2">
+              Dokładny zakres usług biurowych wymaga potwierdzenia przez firmę.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WSPÓLNY JĘZYK MATERIAŁÓW -->
+    <section class="section m-coherence surface-dark plan-lines" aria-labelledby="m-coherence-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__meta">
+            <span class="section-head__index" style="color: var(--chalk-72)">04 — Spójność</span>
+            <span class="zone-chip zone-chip--walnut" style="color: var(--chalk-72)">Jeden system</span>
+          </div>
+          <h2 class="t-h2 section-head__title reveal" id="m-coherence-title">
+            Jedna przestrzeń, wspólny <span class="t-accent">język materiałów</span>.
+          </h2>
+        </div>
+
+        <p class="t-lead reveal" style="color: var(--chalk-72); max-width: 36em">
+          Kuchnia, szafa w przedpokoju i zabudowa salonu mogą tworzyć spójną całość
+          bez kopiowania identycznych frontów w każdym pomieszczeniu.
+        </p>
+
+        <div class="m-coherence__swatches">
+          <div class="swatch reveal">
+            <span class="swatch__color" style="background: #F2F0EA"></span>
+            <span class="swatch__meta"><strong>F–01 · Front matowy</strong><span>ciepła złamana biel</span></span>
+          </div>
+          <div class="swatch reveal" data-delay="1">
+            <span class="swatch__color" style="background: #6A4936"></span>
+            <span class="swatch__meta"><strong>W–02 · Orzech</strong><span>wnętrza i nisze</span></span>
+          </div>
+          <div class="swatch reveal" data-delay="2">
+            <span class="swatch__color" style="background: #3a2c3d"></span>
+            <span class="swatch__meta"><strong>A–03 · Bakłażan</strong><span>fronty akcentowe</span></span>
+          </div>
+          <div class="swatch reveal" data-delay="3">
+            <span class="swatch__color" style="background: #A9ADB0"></span>
+            <span class="swatch__meta"><strong>S–04 · Stal</strong><span>okucia i detale</span></span>
+          </div>
+          <div class="swatch reveal" data-delay="3">
+            <span class="swatch__color" style="background: #C9795D"></span>
+            <span class="swatch__meta"><strong>C–05 · Glina</strong><span>ceramika i dodatki</span></span>
+          </div>
+        </div>
+
+        <p class="process__footnote" style="margin-top: var(--space-4); color: var(--chalk-72)">
+          Paleta poglądowa systemu demo — konkretne dekory i materiały dobiera się przy projekcie.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="band-cta" aria-labelledby="m-cta-title">
+      <div class="container band-cta__inner">
+        <div>
+          <h2 class="t-h2 band-cta__title" id="m-cta-title">Masz przestrzeń, która potrzebuje porządku?</h2>
+          <p class="t-lead" style="color: var(--ink-62); margin-top: var(--space-2)">
+            Opisz pomieszczenie i to, co ma się w nim zmieścić — resztą zajmiemy się na pomiarze.
+          </p>
+        </div>
+        <div class="band-cta__actions">
+          <a class="btn btn--primary" href="kontakt.html#formularz">
+            Porozmawiaj o zabudowie
+            <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a class="btn btn--outline" href="realizacje.html">Zobacz inspiracje</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <p class="site-footer__claim">
+          Dobra kuchnia nie zaczyna się od frontów. Zaczyna się od <span class="t-accent">rytmu dnia</span>.
+        </p>
+        <nav aria-label="Stopka">
+          <h2 class="t-label">Nawigacja</h2>
+          <div class="site-footer__links">
+            <a href="index.html">Start</a>
+            <a href="kuchnie.html">Kuchnie na wymiar</a>
+            <a href="inne-meble.html">Inne meble</a>
+            <a href="realizacje.html">Realizacje</a>
+            <a href="kontakt.html">Kontakt i wycena</a>
+          </div>
+        </nav>
+        <div>
+          <h2 class="t-label">Kontakt</h2>
+          <address>
+            <a href="tel:+48732588726">+48 732 588 726</a>
+            <a href="mailto:kontakt@kuchnienawymiar.eu">kontakt@kuchnienawymiar.eu</a>
+            <p>ul. Rondo Mogilskie 1/542<br>31-516 Kraków</p>
+            <p class="site-footer__note">Spotkanie pod wskazanym adresem wymaga wcześniejszego umówienia.</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="rhythm-strip" aria-hidden="true"></div>
+
+      <div class="site-footer__bottom">
+        <p class="disclaimer">Nieoficjalna koncepcja demonstracyjna — projekt nie jest oficjalną stroną firmy.</p>
+        <p>Materiały wizualne: rysunki poglądowe / inspiracje demonstracyjne</p>
+        <p>Demo © <span data-year>2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Szybki kontakt">
+    <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń</a>
+    <a class="btn btn--ghost" href="kontakt.html#formularz">Napisz</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/navigation.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+  <script src="assets/js/zones.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/form-demo.js" defer></script>
+  <script>
+    /* Przełącznik frontów szafy — mały, lokalny skrypt strony */
+    (function () {
+      var btn = document.querySelector("[data-wardrobe-toggle]");
+      var stage = document.getElementById("wardrobe-stage");
+      var label = document.querySelector("[data-wardrobe-label]");
+      if (!btn || !stage) return;
+      btn.addEventListener("click", function () {
+        var open = stage.classList.toggle("is-open");
+        btn.setAttribute("aria-pressed", open ? "true" : "false");
+        if (label) label.textContent = open ? "Zamknij fronty" : "Odsuń fronty";
+      });
+    })();
+  </script>
+</body>
+</html>

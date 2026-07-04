@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img">
+<rect width="1600" height="1200" fill="#EFECE4"/>
+<rect x="220" y="180" width="1160" height="840" fill="none" fill-opacity="1.0" stroke="#241A26" stroke-width="7.199999999999999" stroke-opacity="0.9"/>
+<rect x="226" y="186" width="1148" height="170" fill="#D9D3C2" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.85"/>
+<rect x="226" y="356" width="170" height="660" fill="#D9D3C2" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.85"/>
+<line x1="396" y1="186" x2="396" y2="356" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.4"/>
+<line x1="556" y1="186" x2="556" y2="356" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.4"/>
+<line x1="716" y1="186" x2="716" y2="356" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.4"/>
+<line x1="876" y1="186" x2="876" y2="356" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.4"/>
+<line x1="1036" y1="186" x2="1036" y2="356" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.4"/>
+<line x1="1196" y1="186" x2="1196" y2="356" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.4"/>
+<path d="M396 356 A190 190 0 0 1 226 186" fill="none" stroke="#241A26" stroke-width="3.4" stroke-opacity="0.75" stroke-dasharray="10 9"/>
+<path d="M540 356 A330 330 0 0 1 226 40" fill="none" stroke="#241A26" stroke-width="2.6" stroke-opacity="0.4" stroke-dasharray="10 9"/>
+<path d="M300 270 m130 0 a130 130 0 1 1 -130 -130" fill="#C7DB58" fill-opacity="0.25" stroke="#241A26" stroke-width="4.4" stroke-opacity="0.85"/>
+<path d="M300 270 m86 0 a86 86 0 1 1 -86 -86" fill="#C7DB58" fill-opacity="0.25" stroke="#241A26" stroke-width="4.4" stroke-opacity="0.95"/>
+<circle cx="300" cy="270" r="8" fill="#241A26" fill-opacity="0.9" stroke="#241A26" stroke-width="3.36" stroke-opacity="0"/>
+<path d="M470 200 a180 180 0 0 1 -90 220" fill="none" stroke="#C9795D" stroke-width="7" stroke-opacity="0.95"/>
+<path d="M368 400 l12 24 l24 -14z" fill="#C9795D" fill-opacity="0.9"/>
+<rect x="700" y="186" width="240" height="166" fill="none" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.5" stroke-dasharray="6 6"/>
+<circle cx="820" cy="266" r="14" fill="#A9ADB0" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.5"/>
+<line x1="226" y1="1090" x2="1374" y2="1090" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="226" y1="1083" x2="226" y2="1097" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="1374" y1="1083" x2="1374" y2="1097" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="800.0" y1="1086" x2="800.0" y2="1094" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="150" y1="186" x2="150" y2="1016" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="143" y1="186" x2="157" y2="186" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="143" y1="1016" x2="157" y2="1016" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<g stroke="#241A26" stroke-opacity="0.5" stroke-width="3.4">
+<path d="M30 30h22M30 30v22" fill="none"/>
+<path d="M1570 30h-22M1570 30v22" fill="none"/>
+<path d="M30 1170h22M30 1170v-22" fill="none"/>
+<path d="M1570 1170h-22M1570 1170v-22" fill="none"/>
+</g>
+<filter id="gr14"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="14" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.14 0 0 0 0 0.10 0 0 0 0 0.15 0 0 0 0.06 0"/></filter>
+<rect width="1600" height="1200" filter="url(#gr14)"/>
+</svg>

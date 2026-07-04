@@ -1,0 +1,267 @@
+/* ============================================================
+   tokens.css — KuchnieNaWymiar.eu (demo)
+   Zmienne projektu: kolor, typografia, rytm, ruch.
+   Koncepcja: „Kuchnia ma swój rytm”.
+   ============================================================ */
+
+:root {
+  /* --- Paleta ------------------------------------------------ */
+  --color-bg: #f2f0ea;            /* Warm Chalk */
+  --color-bg-deep: #eae7df;       /* Warm Chalk, cień modułu */
+  --color-ink: #241a26;           /* Night Aubergine */
+  --color-ink-soft: #43333f;      /* Aubergine rozjaśniony do długiego tekstu */
+  --color-steel: #a9adb0;         /* Soft Steel — linie techniczne */
+  --color-walnut: #6a4936;        /* Walnut Brown */
+  --color-active: #c7db58;        /* Fresh Celery — CTA, wskaźniki */
+  --color-clay: #c9795d;          /* Soft Clay — strefa gotowania */
+  --color-white: #ffffff;
+
+  /* Pochodne — wyłącznie z palety */
+  --ink-08: rgba(36, 26, 38, 0.08);
+  --ink-14: rgba(36, 26, 38, 0.14);
+  --ink-38: rgba(36, 26, 38, 0.38);
+  --ink-62: rgba(36, 26, 38, 0.62);
+  --chalk-08: rgba(242, 240, 234, 0.08);
+  --chalk-16: rgba(242, 240, 234, 0.16);
+  --chalk-45: rgba(242, 240, 234, 0.45);
+  --chalk-72: rgba(242, 240, 234, 0.72);
+  --celery-18: rgba(199, 219, 88, 0.18);
+
+  /* --- Typografia -------------------------------------------- */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Bricolage Grotesque", "Segoe UI", Tahoma, sans-serif;
+  --font-mono: "Azeret Mono", "Courier New", monospace;
+
+  /* Skala */
+  --text-hero: clamp(2.85rem, 1.1rem + 7.4vw, 7.2rem);
+  --text-h1: clamp(2.6rem, 1.4rem + 4.6vw, 5.8rem);
+  --text-h2: clamp(2.1rem, 1.3rem + 3.2vw, 4.4rem);
+  --text-h3: clamp(1.35rem, 1.1rem + 1.1vw, 2rem);
+  --text-lead: clamp(1.12rem, 1rem + 0.55vw, 1.42rem);
+  --text-body: clamp(1rem, 0.96rem + 0.18vw, 1.1rem);
+  --text-small: 0.9rem;
+  --text-label: 0.75rem;
+
+  --leading-display: 0.98;
+  --tracking-display: -0.022em;
+  --tracking-label: 0.14em;
+
+  /* --- Siatka i rytm ------------------------------------------ */
+  --container: 1280px;
+  --wide: 1440px;
+  --gutter: clamp(16px, 2vw, 32px);
+  --edge: clamp(20px, 4vw, 72px);
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+  --space-7: 144px;
+
+  --section: clamp(72px, 6vw + 40px, 144px);
+
+  /* --- Kształty ------------------------------------------------ */
+  --radius-sm: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* --- Ruch ---------------------------------------------------- */
+  --ease-main: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-front: cubic-bezier(0.65, 0.05, 0.18, 1); /* otwieranie frontu */
+  --dur-fast: 0.35s;
+  --dur-mid: 0.55s;
+  --dur-slow: 0.7s;
+
+  /* --- Warstwy ------------------------------------------------- */
+  --z-header: 60;
+  --z-menu: 70;
+  --z-lightbox: 80;
+  --z-grain: 90;
+
+  /* --- Atmosfera ----------------------------------------------- */
+  /* Ziarno papieru: szum fraktalny SVG, nakładany bardzo delikatnie */
+  --grain-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)' opacity='0.55'/%3E%3C/svg%3E");
+
+  --hairline: 1px solid var(--ink-14);
+  --hairline-dark: 1px solid var(--chalk-16);
+}
+
+/* ============================================================
+   Baza dokumentu
+   ============================================================ */
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Ziarno papieru nad całością — nie przechwytuje zdarzeń */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: var(--grain-img);
+  background-size: 240px 240px;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: var(--z-grain);
+}
+
+::selection {
+  background: var(--color-active);
+  color: var(--color-ink);
+}
+
+/* --- Nagłówki ------------------------------------------------ */
+
+.t-display,
+.t-h1,
+.t-h2 {
+  font-family: var(--font-display);
+  font-weight: 480;
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  font-variation-settings: "opsz" 108;
+  text-wrap: balance;
+}
+
+.t-display { font-size: var(--text-hero); }
+.t-h1 { font-size: var(--text-h1); }
+.t-h2 { font-size: var(--text-h2); }
+
+.t-h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.t-lead {
+  font-size: var(--text-lead);
+  line-height: 1.55;
+  font-weight: 400;
+  max-width: 34em;
+}
+
+.t-accent {
+  font-style: italic;
+  font-weight: 430;
+  font-variation-settings: "opsz" 120;
+}
+
+/* Etykieta techniczna (Azeret Mono) */
+.t-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.t-mono {
+  font-family: var(--font-mono);
+  font-weight: 400;
+}
+
+/* --- Fokus ---------------------------------------------------- */
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.surface-dark :focus-visible,
+.site-footer :focus-visible,
+.mobile-menu :focus-visible,
+.lightbox :focus-visible,
+.c-card :focus-visible {
+  outline-color: var(--color-active);
+}
+
+/* --- Kontenery ------------------------------------------------ */
+
+.container {
+  width: min(var(--container), 100% - 2 * var(--edge));
+  margin-inline: auto;
+}
+
+.container-wide {
+  width: min(var(--wide), 100% - 2 * var(--gutter));
+  margin-inline: auto;
+}
+
+/* --- Tła sekcji ----------------------------------------------- */
+
+.surface-dark {
+  background-color: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.surface-dark ::selection {
+  background: var(--color-active);
+  color: var(--color-ink);
+}
+
+/* Linie planu — pionowe podziały jak moduły zabudowy */
+.plan-lines {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      var(--ink-08) 0,
+      var(--ink-08) 1px,
+      transparent 1px,
+      transparent clamp(96px, 12vw, 176px)
+    );
+}
+
+.surface-dark.plan-lines {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      var(--chalk-08) 0,
+      var(--chalk-08) 1px,
+      transparent 1px,
+      transparent clamp(96px, 12vw, 176px)
+    );
+}
+
+/* --- Drobiazgi ------------------------------------------------ */
+
+hr.rule {
+  border: 0;
+  border-top: var(--hairline);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.no-js-note {
+  padding: var(--space-2) var(--edge);
+  background: var(--color-ink);
+  color: var(--color-bg);
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+}

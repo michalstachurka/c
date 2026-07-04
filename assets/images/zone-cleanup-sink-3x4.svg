@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img">
+<rect width="1200" height="1600" fill="#EFECE4"/>
+<line x1="0" y1="1430" x2="1200" y2="1430" stroke="#241A26" stroke-width="5.28" stroke-opacity="0.85"/>
+<rect x="320" y="150" width="560" height="380" fill="none" fill-opacity="1.0" stroke="#241A26" stroke-width="4.8" stroke-opacity="0.6"/>
+<line x1="600" y1="150" x2="600" y2="530" stroke="#241A26" stroke-width="2.88" stroke-opacity="0.4"/>
+<line x1="320" y1="340" x2="880" y2="340" stroke="#241A26" stroke-width="2.88" stroke-opacity="0.4"/>
+<rect x="140" y="640" width="920" height="30" fill="#D9D3C2" fill-opacity="1.0" stroke="#241A26" stroke-width="4.8" stroke-opacity="0.9"/>
+<path d="M420 670 h360 v10 h-24 v96 a10 10 0 0 1 -10 10 h-292 a10 10 0 0 1 -10 -10 v-96 h-24 z" fill="#A9ADB0" fill-opacity="0.4" stroke="#241A26" stroke-width="1.6" stroke-opacity="0.75"/>
+<path d="M600 640 v-96 a54 54 0 0 1 54 -54 h30" fill="none" stroke="#241A26" stroke-width="5" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="684" y1="500" x2="684" y2="516" stroke="#241A26" stroke-width="12.0" stroke-opacity="0.85"/>
+<path d="M684 540 q10 16 0 26 q-10 -10 0 -26z" fill="#C7DB58" fill-opacity="0.9"/>
+<rect x="160" y="670" width="880" height="730" fill="#E6E2D4" fill-opacity="1.0" stroke="#241A26" stroke-width="4.32" stroke-opacity="0.85"/>
+<rect x="180" y="700" width="300" height="560" fill="#F2F0EA" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.8"/>
+<line x1="280" y1="726" x2="380" y2="726" stroke="#241A26" stroke-width="11.04" stroke-opacity="0.9"/>
+<line x1="180" y1="760" x2="480" y2="760" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.35" stroke-dasharray="4 5"/>
+<g transform="rotate(-8 900 1260)"><rect x="560" y="700" width="340" height="560" fill="#F2F0EA" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.85"/>
+</g>
+<rect x="600" y="1020" width="120" height="220" fill="#241A26" fill-opacity="0.55" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.7" rx="6"/>
+<rect x="740" y="1020" width="120" height="220" fill="#6A4936" fill-opacity="0.6" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.7" rx="6"/>
+<line x1="690" y1="740" x2="770" y2="740" stroke="#241A26" stroke-width="11.04" stroke-opacity="0.9"/>
+<line x1="420" y1="1330" x2="780" y2="1330" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="420" y1="1323" x2="420" y2="1337" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="780" y1="1323" x2="780" y2="1337" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="600.0" y1="1326" x2="600.0" y2="1334" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="100" y1="670" x2="100" y2="1430" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="93" y1="670" x2="107" y2="670" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="93" y1="1430" x2="107" y2="1430" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<g stroke="#241A26" stroke-opacity="0.5" stroke-width="3.4">
+<path d="M30 30h22M30 30v22" fill="none"/>
+<path d="M1170 30h-22M1170 30v22" fill="none"/>
+<path d="M30 1570h22M30 1570v-22" fill="none"/>
+<path d="M1170 1570h-22M1170 1570v-22" fill="none"/>
+</g>
+<filter id="gr10"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="10" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.14 0 0 0 0 0.10 0 0 0 0 0.15 0 0 0 0.06 0"/></filter>
+<rect width="1200" height="1600" filter="url(#gr10)"/>
+</svg>

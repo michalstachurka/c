@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Inspiracje — kuchnie i meble na wymiar Kraków | KuchnieNaWymiar.eu — demo</title>
+  <meta name="description" content="Zobacz inspiracje kuchni, szaf i mebli na wymiar oraz przykłady funkcjonalnych rozwiązań dla różnych przestrzeni. Nieoficjalna koncepcja demonstracyjna.">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <p class="demo-note">Nieoficjalna koncepcja demonstracyjna — projekt <strong>nie jest</strong> oficjalną stroną firmy.</p>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="KuchnieNaWymiar.eu — strona główna (demo)">
+        <svg class="brand__mark" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#241A26"/><rect x="6" y="7" width="4" height="18" fill="#F2F0EA"/><rect x="12" y="7" width="8" height="18" fill="#F2F0EA" opacity=".55"/><rect x="22" y="7" width="4" height="18" fill="#C7DB58"/></svg>
+        <span>KuchnieNaWymiar<span class="brand__tld">.eu</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Nawigacja główna">
+        <a class="site-nav__link" href="index.html">Start</a>
+        <a class="site-nav__link" href="kuchnie.html">Kuchnie</a>
+        <a class="site-nav__link" href="inne-meble.html">Inne meble</a>
+        <a class="site-nav__link" href="realizacje.html" aria-current="page">Realizacje</a>
+        <a class="site-nav__link" href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <a class="btn btn--primary btn--small site-header__cta" href="kontakt.html#formularz">
+        Wyślij projekt
+        <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Start</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kuchnie.html">Kuchnie</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="inne-meble.html">Inne meble</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="realizacje.html" aria-current="page">Realizacje</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span class="t-label" style="color: var(--chalk-45)">Kraków · pomiar · projekt · montaż</span>
+      <div class="mobile-menu__contact">
+        <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń: 732 588 726</a>
+        <a class="btn btn--outline-light" href="mailto:kontakt@kuchnienawymiar.eu">Napisz e-mail</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="tresc">
+
+    <section class="section r-hero" aria-labelledby="r-hero-title">
+      <div class="container">
+        <div class="r-hero__head">
+          <div>
+            <p class="hero__kicker t-label">Inspiracje demonstracyjne</p>
+            <h1 class="t-h1 reveal" id="r-hero-title">
+              Zobacz przestrzeń. Potem zajrzyj <span class="t-accent">do środka</span>.
+            </h1>
+          </div>
+          <p class="t-lead reveal" data-delay="1">
+            Najciekawsze rozwiązania często nie są widoczne na pierwszym zdjęciu.
+            Dlatego galeria pokazuje zarówno całe wnętrza, jak i detale przechowywania —
+            zawsze z opisem problemu i rozwiązania.
+          </p>
+        </div>
+
+        <div class="r-filters" role="group" aria-label="Filtry galerii">
+          <button class="r-filter" type="button" data-filter="all" aria-pressed="true">
+            Wszystkie <span class="r-filter__count">—</span>
+          </button>
+          <button class="r-filter" type="button" data-filter="kuchnie" aria-pressed="false">
+            Kuchnie <span class="r-filter__count">—</span>
+          </button>
+          <button class="r-filter" type="button" data-filter="szafy" aria-pressed="false">
+            Szafy <span class="r-filter__count">—</span>
+          </button>
+          <button class="r-filter" type="button" data-filter="lazienki" aria-pressed="false">
+            Łazienki <span class="r-filter__count">—</span>
+          </button>
+          <button class="r-filter" type="button" data-filter="detale" aria-pressed="false">
+            Detale <span class="r-filter__count">—</span>
+          </button>
+        </div>
+
+        <p class="process__footnote" style="margin-top: var(--space-3)">
+          Wszystkie materiały poniżej to inspiracje demonstracyjne — nie są to udokumentowane realizacje firmy.
+        </p>
+
+        <ul class="r-grid" data-project-grid></ul>
+
+        <p class="r-empty" data-grid-empty>Brak pozycji w tej kategorii.</p>
+
+        <noscript>
+          <p class="no-js-note">
+            Galeria wymaga włączonego JavaScriptu. Lista materiałów znajduje się
+            w pliku <code>data/projects.js</code>.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="band-cta" aria-labelledby="r-cta-title">
+      <div class="container band-cta__inner">
+        <div>
+          <h2 class="t-h2 band-cta__title" id="r-cta-title">Masz podobny układ pomieszczenia?</h2>
+          <p class="t-lead" style="color: var(--ink-62); margin-top: var(--space-2)">
+            Prześlij zdjęcia lub rzut. Rozmowę możemy zacząć od największego problemu przestrzeni.
+          </p>
+        </div>
+        <div class="band-cta__actions">
+          <a class="btn btn--primary" href="kontakt.html#formularz">
+            Opisz swoją przestrzeń
+            <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a class="btn btn--outline" href="tel:+48732588726">Zadzwoń: 732 588 726</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <dialog class="lightbox" id="lightbox" aria-label="Podgląd inspiracji">
+      <div class="lightbox__inner">
+        <div class="lightbox__bar">
+          <span class="lightbox__counter" data-lb-counter>01 / 01</span>
+          <button class="icon-btn" type="button" data-lb-close aria-label="Zamknij podgląd">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+
+        <div class="lightbox__stage">
+          <figure class="lightbox__figure">
+            <div class="lightbox__media">
+              <img data-lb-img src="" alt="">
+            </div>
+            <figcaption class="lightbox__caption">
+              <p class="lightbox__title"><span data-lb-title></span> <span class="t-label" style="color: var(--chalk-45)" data-lb-cat></span></p>
+              <div>
+                <p class="t-label">Problem</p>
+                <p data-lb-problem></p>
+              </div>
+              <div>
+                <p class="t-label">Rozwiązanie</p>
+                <p data-lb-solution></p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="lightbox__nav">
+          <button class="icon-btn" type="button" data-lb-prev aria-label="Poprzednia inspiracja">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M16 6H2M6 1L1 6l5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-lb-next aria-label="Następna inspiracja">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <p class="site-footer__claim">
+          Dobra kuchnia nie zaczyna się od frontów. Zaczyna się od <span class="t-accent">rytmu dnia</span>.
+        </p>
+        <nav aria-label="Stopka">
+          <h2 class="t-label">Nawigacja</h2>
+          <div class="site-footer__links">
+            <a href="index.html">Start</a>
+            <a href="kuchnie.html">Kuchnie na wymiar</a>
+            <a href="inne-meble.html">Inne meble</a>
+            <a href="realizacje.html">Realizacje</a>
+            <a href="kontakt.html">Kontakt i wycena</a>
+          </div>
+        </nav>
+        <div>
+          <h2 class="t-label">Kontakt</h2>
+          <address>
+            <a href="tel:+48732588726">+48 732 588 726</a>
+            <a href="mailto:kontakt@kuchnienawymiar.eu">kontakt@kuchnienawymiar.eu</a>
+            <p>ul. Rondo Mogilskie 1/542<br>31-516 Kraków</p>
+            <p class="site-footer__note">Spotkanie pod wskazanym adresem wymaga wcześniejszego umówienia.</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="rhythm-strip" aria-hidden="true"></div>
+
+      <div class="site-footer__bottom">
+        <p class="disclaimer">Nieoficjalna koncepcja demonstracyjna — projekt nie jest oficjalną stroną firmy.</p>
+        <p>Materiały wizualne: rysunki poglądowe / inspiracje demonstracyjne</p>
+        <p>Demo © <span data-year>2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Szybki kontakt">
+    <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń</a>
+    <a class="btn btn--ghost" href="kontakt.html#formularz">Napisz</a>
+  </div>
+
+  <script src="data/projects.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/navigation.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+  <script src="assets/js/zones.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/form-demo.js" defer></script>
+</body>
+</html>

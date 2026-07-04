@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Kontakt i wycena | KuchnieNaWymiar.eu Kraków — demo</title>
+  <meta name="description" content="Skontaktuj się w sprawie kuchni, szafy lub innych mebli na wymiar. Przygotuj zdjęcia, wymiary albo rzut i opisz swoje potrzeby. Nieoficjalna koncepcja demonstracyjna.">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-normal-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <p class="demo-note">Nieoficjalna koncepcja demonstracyjna — projekt <strong>nie jest</strong> oficjalną stroną firmy.</p>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="KuchnieNaWymiar.eu — strona główna (demo)">
+        <svg class="brand__mark" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#241A26"/><rect x="6" y="7" width="4" height="18" fill="#F2F0EA"/><rect x="12" y="7" width="8" height="18" fill="#F2F0EA" opacity=".55"/><rect x="22" y="7" width="4" height="18" fill="#C7DB58"/></svg>
+        <span>KuchnieNaWymiar<span class="brand__tld">.eu</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Nawigacja główna">
+        <a class="site-nav__link" href="index.html">Start</a>
+        <a class="site-nav__link" href="kuchnie.html">Kuchnie</a>
+        <a class="site-nav__link" href="inne-meble.html">Inne meble</a>
+        <a class="site-nav__link" href="realizacje.html">Realizacje</a>
+        <a class="site-nav__link" href="kontakt.html" aria-current="page">Kontakt</a>
+      </nav>
+
+      <a class="btn btn--primary btn--small site-header__cta" href="kontakt.html#formularz">
+        Wyślij projekt
+        <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Start</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kuchnie.html">Kuchnie</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="inne-meble.html">Inne meble</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="realizacje.html">Realizacje</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="kontakt.html" aria-current="page">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span class="t-label" style="color: var(--chalk-45)">Kraków · pomiar · projekt · montaż</span>
+      <div class="mobile-menu__contact">
+        <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń: 732 588 726</a>
+        <a class="btn btn--outline-light" href="mailto:kontakt@kuchnienawymiar.eu">Napisz e-mail</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="tresc">
+
+    <section class="section c-hero" aria-labelledby="c-hero-title">
+      <div class="container">
+        <p class="hero__kicker t-label">Kontakt i wycena</p>
+        <h1 class="t-h1 reveal" id="c-hero-title">
+          Nie potrzebujesz gotowego projektu, <span class="t-accent">żeby zacząć</span>.
+        </h1>
+        <p class="t-lead reveal" data-delay="1">
+          Wystarczą zdjęcia pomieszczenia, przybliżone wymiary albo krótki opis tego,
+          co ma się zmienić.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--flush-top" aria-label="Formularz i dane kontaktowe">
+      <div class="container">
+        <div class="c-grid">
+
+          <!-- ARKUSZ BRIEFU -->
+          <form class="brief" id="formularz" data-demo-form novalidate aria-describedby="brief-demo-info">
+            <div class="brief__head">
+              <span><strong>Arkusz zapytania</strong> · wersja demo</span>
+              <span>KNW–DEMO–01</span>
+            </div>
+
+            <div class="brief__body">
+              <p id="brief-demo-info" class="brief__legal" style="margin-top: var(--space-3)">
+                To formularz demonstracyjny — po kliknięciu „Przygotuj wiadomość”
+                nic nie zostanie wysłane ani zapisane.
+              </p>
+
+              <div class="field">
+                <label class="field__label" for="f-imie">
+                  <span class="field__no">01</span> Imię
+                </label>
+                <input type="text" id="f-imie" name="imie" required autocomplete="given-name" placeholder="np. Anna">
+                <p class="field__error" role="status">Uzupełnij to pole, aby przygotować wiadomość.</p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-kontakt">
+                  <span class="field__no">02</span> Telefon lub e-mail
+                </label>
+                <input type="text" id="f-kontakt" name="kontakt" required autocomplete="tel email" placeholder="jak możemy oddzwonić lub odpisać">
+                <p class="field__error" role="status">Podaj telefon albo adres e-mail.</p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-zabudowa">
+                  <span class="field__no">03</span> Rodzaj zabudowy
+                </label>
+                <select id="f-zabudowa" name="zabudowa">
+                  <option value="Kuchnia" selected>Kuchnia</option>
+                  <option value="Szafa lub garderoba">Szafa lub garderoba</option>
+                  <option value="Meble łazienkowe">Meble łazienkowe</option>
+                  <option value="Meble biurowe">Meble biurowe</option>
+                  <option value="Kilka pomieszczeń">Kilka pomieszczeń</option>
+                  <option value="Inne">Inne</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-lokalizacja">
+                  <span class="field__no">04</span> Lokalizacja inwestycji
+                </label>
+                <input type="text" id="f-lokalizacja" name="lokalizacja" placeholder="np. Kraków, Prądnik Biały">
+                <p class="field__hint">Obszar działania poza Krakowem warto potwierdzić telefonicznie.</p>
+              </div>
+
+              <fieldset class="field">
+                <legend class="field__label"><span class="field__no">05</span> Etap inwestycji</legend>
+                <div class="chip-group">
+                  <label class="chip"><input type="radio" name="etap" value="Pomysł" checked><span>Pomysł</span></label>
+                  <label class="chip"><input type="radio" name="etap" value="Mam pomiary"><span>Mam pomiary</span></label>
+                  <label class="chip"><input type="radio" name="etap" value="Gotowy projekt"><span>Gotowy projekt</span></label>
+                  <label class="chip"><input type="radio" name="etap" value="Remont w toku"><span>Remont w toku</span></label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label class="field__label" for="f-wiadomosc">
+                  <span class="field__no">06</span> Wiadomość
+                </label>
+                <textarea id="f-wiadomosc" name="wiadomosc" required rows="5"
+                  placeholder="Opisz pomieszczenie i to, co ma się zmienić — np. „wąska kuchnia w bloku, za mało blatu, dużo zapasów”."></textarea>
+                <p class="field__error" role="status">Napisz choć jedno zdanie o przestrzeni.</p>
+              </div>
+
+              <div class="field">
+                <span class="field__label" id="f-file-label"><span class="field__no">07</span> Załącznik (demo)</span>
+                <div class="file-demo">
+                  <label class="btn btn--outline btn--small file-demo__btn" for="f-plik">Wybierz plik z rzutem lub zdjęciem</label>
+                  <input type="file" id="f-plik" class="visually-hidden" aria-labelledby="f-file-label" accept="image/*,.pdf">
+                  <p class="file-demo__name" data-file-name>Nie wybrano pliku. Załącznik działa tylko poglądowo — nic nie jest przesyłane.</p>
+                </div>
+              </div>
+
+              <div class="brief__actions">
+                <button class="btn btn--primary" type="submit">
+                  Przygotuj wiadomość
+                  <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+                </button>
+              </div>
+
+              <div class="form-status" data-form-status tabindex="-1" role="status" aria-live="polite">
+                <p class="form-status__title">To formularz demonstracyjny — wiadomość nie została wysłana.</p>
+                <p>
+                  Żadne dane nie opuściły tej przeglądarki. Skorzystaj z telefonu
+                  lub adresu e-mail podanego obok — albo otwórz swój program pocztowy
+                  z przygotowaną treścią:
+                </p>
+                <p>
+                  <a class="link-line" data-mailto href="mailto:kontakt@kuchnienawymiar.eu">
+                    Otwórz w programie pocztowym
+                    <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </a>
+                </p>
+              </div>
+
+              <p class="brief__legal">
+                Wersja produkcyjna formularza będzie wymagała zgody na przetwarzanie
+                danych oraz informacji o administratorze — do uzupełnienia przez firmę.
+              </p>
+            </div>
+          </form>
+
+          <!-- DANE + PRZYGOTOWANIE -->
+          <aside class="c-aside" aria-label="Dane kontaktowe i przygotowanie">
+            <div class="c-card">
+              <h2 class="t-label">Dane kontaktowe</h2>
+              <div class="c-card__row">
+                <span class="t-label">Telefon</span>
+                <a href="tel:+48732588726">+48 732 588 726</a>
+              </div>
+              <div class="c-card__row">
+                <span class="t-label">E-mail</span>
+                <a href="mailto:kontakt@kuchnienawymiar.eu">kontakt@kuchnienawymiar.eu</a>
+              </div>
+              <div class="c-card__row">
+                <span class="t-label">Adres</span>
+                <p>ul. Rondo Mogilskie 1/542<br>31-516 Kraków</p>
+                <a class="link-line" style="font-family: var(--font-body); font-size: 0.95rem"
+                  href="https://maps.google.com/?q=Rondo%20Mogilskie%201%2C%20Krak%C3%B3w" rel="noopener noreferrer" target="_blank">
+                  Zobacz na mapie
+                  <svg class="btn__arrow" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M0 6h14M10 1l5 5-5 5" stroke="currentColor" stroke-width="1.5"/></svg>
+                </a>
+              </div>
+              <p class="c-card__note">Spotkanie pod wskazanym adresem wymaga wcześniejszego umówienia.</p>
+            </div>
+
+            <div class="c-prepare">
+              <h2 class="t-h3">Co warto przygotować</h2>
+              <ol>
+                <li>zdjęcia pomieszczenia</li>
+                <li>podstawowe wymiary lub rzut</li>
+                <li>listę planowanych sprzętów</li>
+                <li>inspiracje</li>
+                <li>informację, co nie działa w obecnym układzie</li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <p class="site-footer__claim">
+          Dobra kuchnia nie zaczyna się od frontów. Zaczyna się od <span class="t-accent">rytmu dnia</span>.
+        </p>
+        <nav aria-label="Stopka">
+          <h2 class="t-label">Nawigacja</h2>
+          <div class="site-footer__links">
+            <a href="index.html">Start</a>
+            <a href="kuchnie.html">Kuchnie na wymiar</a>
+            <a href="inne-meble.html">Inne meble</a>
+            <a href="realizacje.html">Realizacje</a>
+            <a href="kontakt.html">Kontakt i wycena</a>
+          </div>
+        </nav>
+        <div>
+          <h2 class="t-label">Kontakt</h2>
+          <address>
+            <a href="tel:+48732588726">+48 732 588 726</a>
+            <a href="mailto:kontakt@kuchnienawymiar.eu">kontakt@kuchnienawymiar.eu</a>
+            <p>ul. Rondo Mogilskie 1/542<br>31-516 Kraków</p>
+            <p class="site-footer__note">Spotkanie pod wskazanym adresem wymaga wcześniejszego umówienia.</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="rhythm-strip" aria-hidden="true"></div>
+
+      <div class="site-footer__bottom">
+        <p class="disclaimer">Nieoficjalna koncepcja demonstracyjna — projekt nie jest oficjalną stroną firmy.</p>
+        <p>Materiały wizualne: rysunki poglądowe / inspiracje demonstracyjne</p>
+        <p>Demo © <span data-year>2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Szybki kontakt">
+    <a class="btn btn--primary" href="tel:+48732588726">Zadzwoń</a>
+    <a class="btn btn--ghost" href="#formularz">Napisz</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/navigation.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+  <script src="assets/js/zones.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/form-demo.js" defer></script>
+</body>
+</html>

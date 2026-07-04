@@ -1,0 +1,509 @@
+/* ============================================================
+   responsive.css — KuchnieNaWymiar.eu (demo)
+   Przebudowy układu: 360 / 768 / 1024 / 1440 / 1920.
+   Mobile projektowany osobno, nie zwężany.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Pozioma sekwencja stref — tryby
+   Bazowo (bez JS / na dotyku): natywny poziomy scroll-snap.
+   Klasa .zones--sticky (JS, ≥1024, bez reduced-motion):
+   pionowy scroll steruje przesunięciem toru.
+   ------------------------------------------------------------ */
+
+.zones__viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.zones__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.zones__track {
+  width: max-content;
+}
+
+.zone-panel {
+  scroll-snap-align: center;
+}
+
+.zones--snap .zones__arrows {
+  display: flex;
+}
+
+.zones--sticky {
+  height: 430svh;
+}
+
+.zones--sticky .zones__sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 0;
+  /* miejsce na przyklejony header + pasek demo */
+  padding-top: calc(var(--space-4) + 64px);
+}
+
+.zones--sticky .zones__viewport {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zones--sticky {
+    height: auto;
+  }
+
+  .zones--sticky .zones__sticky {
+    position: static;
+    height: auto;
+  }
+
+  .zones__viewport {
+    overflow-x: visible;
+  }
+
+  .zones__track {
+    flex-direction: column;
+    width: auto;
+    padding-inline: var(--edge);
+  }
+
+  .zone-panel {
+    width: 100%;
+    max-width: 880px;
+  }
+
+  .zones__arrows {
+    display: none !important;
+  }
+
+  .zones__railfill {
+    width: 100% !important;
+  }
+}
+
+/* ============================================================
+   ≤ 1023 px — tablet i mobile
+   ============================================================ */
+
+@media (max-width: 1023.98px) {
+  .site-nav,
+  .site-header__cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 0;
+  }
+
+  .hero__layout {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .hero__copy {
+    padding-block: var(--space-4) var(--space-3);
+  }
+
+  .hero__title {
+    margin-right: 0;
+  }
+
+  .hero__media {
+    margin-inline: calc(-1 * var(--edge));
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .rhythm-indicator {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .rhythm-indicator__caption {
+    display: none;
+  }
+
+  /* RYTM DNIA */
+
+  .routine__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* STREFY */
+
+  .zone-panel {
+    width: min(560px, 82vw);
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .zone-panel:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+
+  .zone-panel:nth-child(even) .zone-panel__media {
+    order: 0;
+  }
+
+  .zone-panel__media {
+    max-height: none;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* OFERTA */
+
+  .offer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-strip {
+    min-height: clamp(300px, 46vh, 420px);
+  }
+
+  /* PROCES — pionowa oś */
+
+  .process__rail {
+    display: none;
+  }
+
+  .process__steps {
+    grid-template-columns: 1fr;
+    gap: 0;
+    position: relative;
+    padding-left: 26px;
+  }
+
+  .process__steps::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: var(--ink-14);
+  }
+
+  .process-step {
+    padding-block: var(--space-3);
+  }
+
+  .process-step::before {
+    top: calc(var(--space-3) + 6px);
+    left: -26px;
+  }
+
+  /* INSPIRACJE */
+
+  .inspo-row,
+  .inspo-row:nth-child(even) {
+    grid-template-columns: 1fr;
+    margin-inline: 0;
+  }
+
+  .inspo-row:nth-child(even) .inspo-row__media {
+    order: 0;
+  }
+
+  .inspo-row__media {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .inspo-row__panel,
+  .inspo-row:nth-child(even) .inspo-row__panel {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--ink-14);
+  }
+
+  /* CTA KOŃCOWE */
+
+  .start-cta__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* KUCHNIE */
+
+  .k-hero__grid,
+  .k-priorities__panel,
+  .k-materials__grid,
+  .k-prepare__grid,
+  .k-layouts__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .k-layouts__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .k-priorities__checks {
+    border-left: 0;
+    border-top: 1px solid var(--ink-14);
+    padding-left: 0;
+    padding-top: var(--space-3);
+  }
+
+  .k-materials__media {
+    position: static;
+  }
+
+  /* INNE MEBLE */
+
+  .m-hero__grid,
+  .m-wardrobe__grid,
+  .m-block__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .m-block__grid--flip .m-block__media {
+    order: 0;
+  }
+
+  .m-coherence__swatches {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* REALIZACJE */
+
+  .r-hero__head {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .r-grid {
+    columns: 2 300px;
+  }
+
+  /* KONTAKT */
+
+  .c-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .c-aside {
+    position: static;
+  }
+
+  /* STOPKA */
+
+  .site-footer__top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__claim {
+    grid-column: 1 / -1;
+  }
+
+  /* pasek CTA */
+
+  .band-cta__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   ≤ 767 px — mobile
+   ============================================================ */
+
+@media (max-width: 767.98px) {
+  :root {
+    --section: clamp(56px, 14vw, 88px);
+  }
+
+  .demo-note {
+    font-size: 0.6rem;
+    padding-inline: var(--space-2);
+  }
+
+  .floating-cta {
+    display: inline-flex;
+  }
+
+  body {
+    /* miejsce na pływające CTA */
+    scroll-padding-bottom: 80px;
+  }
+
+  .hero__media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 auto;
+    justify-content: space-between;
+  }
+
+  .rhythm-indicator {
+    gap: var(--space-2);
+  }
+
+  .rhythm-indicator__zone .t-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+
+  .section-head {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .zone-panel {
+    width: min(420px, 86vw);
+  }
+
+  .zones__head .t-h2 {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+  }
+
+  .routine__plan {
+    margin-inline: calc(-1 * (var(--edge) - 14px));
+  }
+
+  .inspo-face--solution {
+    transform: translateY(102%);
+  }
+
+  .inspo-row.is-open .inspo-face--solution {
+    transform: translateY(0);
+  }
+
+  .lightbox__caption {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox__media img {
+    max-height: 52dvh;
+  }
+
+  .m-hero__collage .media-frame:nth-child(1) {
+    grid-column: 1 / 9;
+  }
+
+  .m-hero__collage .media-frame:nth-child(2) {
+    grid-column: 6 / 13;
+    grid-row: 5 / 13;
+  }
+
+  .m-coherence__swatches {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .r-grid {
+    columns: 1;
+  }
+
+  .site-footer__top {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .brief__actions .btn {
+    width: 100%;
+  }
+
+  .k-layouts__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .flow-chain {
+    gap: 8px 4px;
+  }
+
+  .flow-chain__step {
+    font-size: 0.64rem;
+    padding: 7px 10px;
+  }
+}
+
+/* ============================================================
+   ≤ 479 px — wąskie telefony (test: 360 px)
+   ============================================================ */
+
+@media (max-width: 479.98px) {
+  :root {
+    --edge: 18px;
+  }
+
+  .brand {
+    font-size: 0.98rem;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .start-cta__actions .btn,
+  .band-cta__actions .btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .k-layouts__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .zone-panel {
+    width: 86vw;
+    padding: 16px;
+  }
+
+  .lightbox__inner {
+    padding: 10px;
+  }
+
+  .icon-btn {
+    width: 46px;
+    height: 46px;
+  }
+
+  .rhythm-indicator {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .rhythm-indicator__zone {
+    grid-template-columns: auto 1fr;
+    display: grid;
+    gap: 10px;
+    align-items: baseline;
+    padding-top: 4px;
+  }
+}
+
+/* ============================================================
+   ≥ 1440 px — szerokie ekrany
+   ============================================================ */
+
+@media (min-width: 1440px) {
+  .zone-panel {
+    width: min(820px, 58vw);
+  }
+}
+
+/* ============================================================
+   ≥ 1800 px — bardzo szerokie ekrany (test: 1920 px)
+   Treść nie rozlewa się na całą szerokość.
+   ============================================================ */
+
+@media (min-width: 1800px) {
+  :root {
+    --edge: calc((100vw - 1680px) / 2);
+  }
+
+  .zones__track {
+    gap: 56px;
+  }
+}

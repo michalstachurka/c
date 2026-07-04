@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img">
+<rect width="1200" height="1600" fill="#EFECE4"/>
+<line x1="0" y1="1430" x2="1200" y2="1430" stroke="#241A26" stroke-width="5.28" stroke-opacity="0.85"/>
+<rect x="400" y="150" width="400" height="90" fill="#241A26" fill-opacity="0.92" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.9"/>
+<rect x="560" y="240" width="80" height="60" fill="#241A26" fill-opacity="0.92" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.9"/>
+<rect x="300" y="300" width="600" height="380" fill="#C9795D" fill-opacity="0.5" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.6"/>
+<line x1="300" y1="376" x2="900" y2="376" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.25"/>
+<line x1="300" y1="452" x2="900" y2="452" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.25"/>
+<line x1="300" y1="528" x2="900" y2="528" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.25"/>
+<line x1="300" y1="604" x2="900" y2="604" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.25"/>
+<line x1="300" y1="680" x2="900" y2="680" stroke="#241A26" stroke-width="2.4" stroke-opacity="0.25"/>
+<line x1="360" y1="420" x2="620" y2="420" stroke="#6A4936" stroke-width="16.8" stroke-opacity="0.9"/>
+<rect x="380" y="368" width="34" height="52" fill="#F2F0EA" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.7" rx="4"/>
+<rect x="426" y="356" width="34" height="64" fill="#F2F0EA" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.7" rx="4"/>
+<rect x="472" y="374" width="34" height="46" fill="#F2F0EA" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.7" rx="4"/>
+<rect x="520" y="362" width="44" height="58" fill="#F2F0EA" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.7" rx="4"/>
+<rect x="140" y="680" width="920" height="30" fill="#D9D3C2" fill-opacity="1.0" stroke="#241A26" stroke-width="4.8" stroke-opacity="0.9"/>
+<rect x="380" y="664" width="440" height="16" fill="#241A26" fill-opacity="0.95" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.9"/>
+<line x1="444" y1="672" x2="496" y2="672" stroke="#F2F0EA" stroke-width="4.8" stroke-opacity="0.55"/>
+<line x1="574" y1="672" x2="626" y2="672" stroke="#F2F0EA" stroke-width="4.8" stroke-opacity="0.55"/>
+<line x1="704" y1="672" x2="756" y2="672" stroke="#F2F0EA" stroke-width="4.8" stroke-opacity="0.55"/>
+<circle cx="600" cy="640" r="60" fill="#241A26" fill-opacity="0.15" stroke="#241A26" stroke-width="4.8" stroke-opacity="0.7"/>
+<line x1="660" y1="640" x2="730" y2="620" stroke="#241A26" stroke-width="9.6" stroke-opacity="0.7"/>
+<rect x="430" y="596" width="84" height="44" fill="#C7DB58" fill-opacity="1.0" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.85" rx="4"/>
+<rect x="160" y="710" width="880" height="690" fill="#E6E2D4" fill-opacity="1.0" stroke="#241A26" stroke-width="4.32" stroke-opacity="0.85"/>
+<rect x="380" y="750" width="440" height="300" fill="#241A26" fill-opacity="0.9" stroke="#241A26" stroke-width="3.36" stroke-opacity="0.85"/>
+<line x1="420" y1="810" x2="780" y2="810" stroke="#F2F0EA" stroke-width="7.199999999999999" stroke-opacity="0.6"/>
+<rect x="500" y="880" width="200" height="120" fill="none" fill-opacity="1.0" stroke="#F2F0EA" stroke-width="3.36" stroke-opacity="0.4"/>
+<line x1="220" y1="760" x2="290" y2="760" stroke="#241A26" stroke-width="11.04" stroke-opacity="0.9"/>
+<line x1="910" y1="760" x2="980" y2="760" stroke="#241A26" stroke-width="11.04" stroke-opacity="0.9"/>
+<line x1="220" y1="1090" x2="290" y2="1090" stroke="#241A26" stroke-width="11.04" stroke-opacity="0.9"/>
+<line x1="910" y1="1090" x2="980" y2="1090" stroke="#241A26" stroke-width="11.04" stroke-opacity="0.9"/>
+<line x1="380" y1="1330" x2="820" y2="1330" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="380" y1="1323" x2="380" y2="1337" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="820" y1="1323" x2="820" y2="1337" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<line x1="600.0" y1="1326" x2="600.0" y2="1334" stroke="#241A26" stroke-width="2.64" stroke-opacity="0.45"/>
+<g stroke="#241A26" stroke-opacity="0.5" stroke-width="3.4">
+<path d="M30 30h22M30 30v22" fill="none"/>
+<path d="M1170 30h-22M1170 30v22" fill="none"/>
+<path d="M30 1570h22M30 1570v-22" fill="none"/>
+<path d="M1170 1570h-22M1170 1570v-22" fill="none"/>
+</g>
+<filter id="gr9"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="9" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.14 0 0 0 0 0.10 0 0 0 0 0.15 0 0 0 0.06 0"/></filter>
+<rect width="1200" height="1600" filter="url(#gr9)"/>
+</svg>
